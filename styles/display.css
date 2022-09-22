@@ -42,3 +42,7 @@
 .justify__end{
     justify-content: flex-end;
 }
+
+.justify__start{
+    justify-content: flex-start;
+}

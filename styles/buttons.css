@@ -22,6 +22,8 @@
 .button__grey{
     background-color: var(--gray-2);
     border-color: var(--gray-2);
+    height: 38px;
+    width: 96px;
 }
 
 .button__grey:hover{
@@ -45,6 +47,8 @@
     border-radius: 2px;
     background-color: var(--whiteFixed);
     color: var(--gray-2);
+    width: 68px;
+    height: 28px;
 }
 
 .button__outline:hover{
@@ -65,6 +69,11 @@
     color: var(--whiteFixed);
 }
 
+.button__outline-active{
+    width: 89px;
+    height: 28px;
+}
+
 .button__disabled{
     background-color: var(--gray-5);
     color: var(--gray-4);
@@ -73,9 +82,18 @@
 
 .button__like{
     background-color: var(gray-opacity-1);
+    border-radius: 20%;
+    height: 34px;
+    width: 35px;
+    border: none;
+    cursor: pointer;
 }
 
 .button__like:hover{
+    background-color: var(--tertiary-color);
+}
+
+.button__like:focus{
     background-color: var(--tertiary-color);
 }
 

@@ -14,8 +14,9 @@
 }
 
 .textarea{
-    height: 95px;
+    height: 205px;
     padding: 28px 21px;
+    border-color: var(--gray-5);
 }
 
 .textarea:focus{

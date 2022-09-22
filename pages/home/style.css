@@ -2,10 +2,32 @@
     height: 38px;
     width: 69px;
     position: relative;
-    left: 715px;
+    left: 683px;
+    bottom: 10px;
 }
 
 .img__formatting{
     width: 52px;
     height: 52px;
 }
+
+.aside-wrapper{
+    height: 50vh;
+}
+
+.aside__li{
+    width: 65%;
+}
+
+.post__fullComment{
+    max-width: 90%;
+    text-align: justify;
+}
+
+.post__fullComment > p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
