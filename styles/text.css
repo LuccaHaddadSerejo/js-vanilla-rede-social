@@ -1,0 +1,33 @@
+.title-1{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.title-2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.text-1{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.text-2{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;  
+}
+
+.text-3{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;   
+}
+
+.text__indent-1{
+    text-indent: 20px;
+}

@@ -1,0 +1,27 @@
+.input{
+    padding: 16px 20px;
+    background-color: var(--whiteFixed);
+    border-color: var(--gray-5);
+    height: 52px;
+}
+
+/* .input::placeholder{
+    color: var(--gray-4);
+} */
+
+.input:focus{
+    border-color: var(--primary-color);
+}
+
+.textarea{
+    height: 95px;
+    padding: 28px 21px;
+}
+
+.textarea:focus{
+    border-color: var(--primary-color);
+}
+
+.placeholder{
+    color: var(--gray-4);
+}
