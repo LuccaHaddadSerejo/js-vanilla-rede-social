@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="../../styles/buttons.css">
   <link rel="stylesheet" href="../../styles/colors.css">
   <link rel="stylesheet" href="../../styles/inputs.css">
-  <link rel="stylesheet" href="../../styles/sizes.css">
   <link rel="stylesheet" href="../../styles/modal.css"> 
   <link rel="stylesheet" href="../../styles/text.css">
   <link rel="stylesheet" href="../../styles/spacing.css">
   <link rel="stylesheet" href="../../styles/positions.css">
+  <link rel="stylesheet" href="../../styles/sizes.css">
   <link rel="stylesheet" href="../../styles/display.css">
 
   <title>TechPosters - Home</title>
@@ -28,58 +28,58 @@
       </nav>
     </header>
   <main id="parentModal" class="mt__header container">
-    <div class="flex__row mt gap-4 aside-wrapper">
-        <section class="flex__column half gap-1">
-            <div class="flex__row gap-2">
-                <img class="img__formatting" src="../../assets/img/user1.svg" alt="">
-                <div class="flex__column gap-3">
-                    <p class="title-2">Samuel Leão</p>
-                    <p class="text-2">Front end Engineer</p>
+        <div class="flex__row mt gap-4 main__mobile div-1__wrapper">
+            <section class="flex__column half gap-1">
+                <div class="flex__row gap-2">
+                    <img class="img__formatting" src="../../assets/img/user1.svg" alt="">
+                    <div class="flex__column gap-3">
+                        <p class="title-2">Samuel Leão</p>
+                        <p class="text-2">Front end Engineer</p>
+                    </div>
                 </div>
-            </div>
-            <form class="flex__column gap-1">
-                <input class="input outline__none border__radius-1 border size__width-1" type="text" placeholder="Titulo do post">
-                <label hidden for="postComment"></label>
-                <textarea class="textarea outline__none border__radius-1 border size__width-1" name="postComment"></textarea>
-                <button class="button border__radius-1 border-2 button__primary button__post">Postar</button>
-            </form>
-        </section>
-        <aside class="half flex__column gap-1 position__sticky">
-            <h2 class="title-2 mb-2">Sugestões para você seguir</h2>
-            <ul>
-                <li class="flex__row mb justify__between aside__li">
-                    <div class="flex__row gap-2">
-                        <img class="img__formatting" src="../../assets/img/user2.svg" alt="">
-                        <div class="flex__column gap-3">
-                            <p class="title-2">Samuel Persuhn</p>
-                            <p class="text-2">Front end Engineer</p>
+                <form class="flex__column teste gap-1">
+                    <input class="input outline__none border__radius-1 border size__width-1" type="text" placeholder="Titulo do post">
+                    <label hidden for="postComment"></label>
+                    <textarea class="textarea outline__none border__radius-1 border size__width-1" name="postComment"></textarea>
+                    <button class="button border__radius-1 border-2 button__primary button__post">Postar</button>
+                </form>
+            </section>
+            <aside class="flex__column half gap-1 position__sticky">
+                <h2 class="title-2 mb-2">Sugestões para você seguir</h2>
+                <ul>
+                    <li class="followers__users flex__row mb justify__between aside__li">
+                        <div class="flex__row gap-2">
+                            <img class="img__formatting" src="../../assets/img/user2.svg" alt="">
+                            <div class="flex__column gap-3">
+                                <p class="title-2">Samuel Persuhn</p>
+                                <p class="text-2">Front end Engineer</p>
+                            </div>
                         </div>
-                    </div>
-                    <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
-                </li>
-                <li class="flex__row mb justify__between aside__li">
-                    <div class="flex__row gap-2">
-                        <img class="img__formatting" src="../../assets/img/user3.svg" alt="">
-                        <div class="flex__column gap-3">
-                            <p class="title-2">Carlos Lima</p>
-                            <p class="text-2">UX e UI Designer</p>
+                        <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
+                    </li>
+                    <li class=" followers__users flex__row mb justify__between aside__li">
+                        <div class="flex__row gap-3">
+                            <img class="img__formatting" src="../../assets/img/user3.svg" alt="">
+                            <div class="flex__column gap-3">
+                                <p class="title-2">Carlos Lima</p>
+                                <p class="text-2">UX e UI Designer</p>
+                            </div>
                         </div>
-                    </div>
-                    <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
-                </li>
-                <li class="flex__row mb justify__between aside__li">
-                    <div class="flex__row gap-2">
-                        <img class="img__formatting" src="../../assets/img/user4.svg" alt="">
-                        <div class="flex__column gap-3">
-                            <p class="title-2">Carla Maria</p>
-                            <p class="text-2">Back end Engineer</p>
+                        <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
+                    </li>
+                    <li class="followers__users flex__row mb justify__between aside__li">
+                        <div class="flex__row gap-2">
+                            <img class="img__formatting" src="../../assets/img/user4.svg" alt="">
+                            <div class="flex__column gap-3">
+                                <p class="title-2">Carla Maria</p>
+                                <p class="text-2">Back end Engineer</p>
+                            </div>
                         </div>
-                    </div>
-                    <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
-                </li>
-            </ul>
-        </aside>
-    </div>
+                        <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
+                    </li>
+                </ul>
+            </aside>
+        </div>
       <section class="half">
           <h2 class="title-1 mb-3">Posts</h2>
           <ul id="posts" class="flex__column gap-5">

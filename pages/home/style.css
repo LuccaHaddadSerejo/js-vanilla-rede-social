@@ -1,9 +1,11 @@
+.div-1__wrapper{
+    height: 450px;
+}
+
 .button__post{
     height: 38px;
     width: 69px;
-    position: relative;
-    left: 683px;
-    bottom: 10px;
+    align-self: flex-end;
 }
 
 .img__formatting{
@@ -11,23 +13,33 @@
     height: 52px;
 }
 
-.aside-wrapper{
-    height: 50vh;
-}
-
 .aside__li{
     width: 65%;
 }
 
 .post__fullComment{
-    max-width: 90%;
-    text-align: justify;
+    max-width: 100%;
+    text-align: left;
 }
 
 .post__fullComment > p{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+@media (max-width:800px){
+    .main__mobile{
+        flex-wrap: wrap
+    }
+
+    .half__w{
+        width: 100%;
+    }
+
+    .teste{
+        width: 100%;
+    }
 }
 
 

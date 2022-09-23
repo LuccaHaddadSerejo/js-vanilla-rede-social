@@ -24,9 +24,8 @@ function createPost(listaUm, listaDois){
         listDivTwo.classList = "post__fullComment"
         listDivTwo_h2.classList = "title-1 mb-2"
         listDivTwo_p.classList = "text-1"
-        listDivThree.classList = "flex__row align__center"
+        listDivThree.classList = "flex__row align__center gap-3"
         listDivThree_btn.classList = "button border__radius-1 border-2 button__grey"
-        listDivThree_btnTwo = "ml-2 button__like"
 
         listDivOne_img.src = listaUm[i].img
         listDivOne_div_pOne.innerText = listaUm[i].user
@@ -34,7 +33,7 @@ function createPost(listaUm, listaDois){
         listDivTwo_h2.innerText = listaDois[i].title
         listDivTwo_p.innerText = listaDois[i].text
         listDivThree_btn.innerText = "Abrir posts"
-        // listDivThree_btnTwo.innerHTML = "<button><img src="../../assets/img/Vector.svg"></button>"
+        listDivThree_btnTwo.innerHTML = `<button><img class="teste" src="../../assets/img/Vector.svg"></button>`
 
         listDivThree_btn.addEventListener("click", function(){
 
@@ -88,6 +87,7 @@ function createPost(listaUm, listaDois){
             wrapper.remove()      
         })
         })
+
         listDivOne_div.append(listDivOne_div_pOne, listDivOne_div_pTwo)
         listDivOne.append(listDivOne_img, listDivOne_div)
         listDivTwo.append(listDivTwo_h2, listDivTwo_p)
@@ -98,21 +98,6 @@ function createPost(listaUm, listaDois){
 }
 
 createPost(users, posts)
-
-
-
-// function showModal(){
-
-// }
-
-// function closeModal(){
-
-//     })
-// }
-
-// showModal()
-
-
 
 function followHover(){
         const btnFollower = document.getElementsByClassName("button_follower")

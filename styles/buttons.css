@@ -1,10 +1,10 @@
 .button{
     color: var(--whiteFixed);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
-    line-height: 17px;
-    padding: 0 12px;
+    line-height: 1.063rem;
+    padding: 0 0.75rem;
     cursor: pointer;
 }
 
@@ -80,25 +80,27 @@
     border-color: var(--gray-5);
 }
 
-.button__like{
-    background-color: var(gray-opacity-1);
+/* .button__like{
+    background-color: transparent;
+    border: none;
+    fill: var(--tertiary-color);
     border-radius: 20%;
     height: 34px;
     width: 35px;
-    border: none;
     cursor: pointer;
 }
 
 .button__like:hover{
-    background-color: var(--tertiary-color);
+    fill: var(--tertiary-color);
 }
 
 .button__like:focus{
-    background-color: var(--tertiary-color);
+    fill: var(--tertiary-color);
 }
 
 .button__like:active{
-    background-color: var(--tertiary-color);
-}
+    fill: var(--tertiary-color);
+} */
+
 
 

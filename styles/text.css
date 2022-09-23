@@ -1,33 +1,33 @@
 .title-1{
     font-weight: 700;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
 }
 
 .title-2{
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
 }
 
 .text-1{
     font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.75rem;
 }
 
 .text-2{
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;  
+    font-size: 0.875rem;
+    line-height: 1rem;  
 }
 
 .text-3{
     font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;   
+    font-size: 0.75rem;
+    line-height: 1rem;   
 }
 
 .text__indent-1{
-    text-indent: 20px;
+    text-indent: 1.25rem;
 }
