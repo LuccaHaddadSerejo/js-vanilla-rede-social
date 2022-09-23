@@ -1,6 +1,6 @@
-.div-1__wrapper{
-    height: 450px;
-}
+@import "../../styles/sizes.css";
+@import "../../styles/display.css";
+
 
 .button__post{
     height: 38px;
@@ -30,14 +30,28 @@
 
 @media (max-width:800px){
     .main__mobile{
-        flex-wrap: wrap
+        display: flex;
+        flex-direction: column;
     }
 
-    .half__w{
-        width: 100%;
+    .position__fixed-2{
+        position: relative;
+        right: 9px;
+        bottom: 153px;
+        overflow-y: auto;
     }
 
-    .teste{
+    .position__post__mobile{
+        position: relative;
+        bottom: 100px;
+    }
+
+    .follower__mobile{
+        display: flex;
+        flex-direction: row;  
+    }
+
+    .half{
         width: 100%;
     }
 }

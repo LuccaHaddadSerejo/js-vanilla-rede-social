@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../styles/globalStyles.css"/>
-  <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="../../styles/navbar.css">
   <link rel="stylesheet" href="../../styles/borders.css">
   <link rel="stylesheet" href="../../styles/buttons.css">
@@ -15,8 +14,9 @@
   <link rel="stylesheet" href="../../styles/text.css">
   <link rel="stylesheet" href="../../styles/spacing.css">
   <link rel="stylesheet" href="../../styles/positions.css">
-  <link rel="stylesheet" href="../../styles/sizes.css">
+  <!-- <link rel="stylesheet" href="../../styles/sizes.css"> -->
   <link rel="stylesheet" href="../../styles/display.css">
+  <link rel="stylesheet" href="style.css"/>
 
   <title>TechPosters - Home</title>
 </head>
@@ -28,8 +28,8 @@
       </nav>
     </header>
   <main id="parentModal" class="mt__header container">
-        <div class="flex__row mt gap-4 main__mobile div-1__wrapper">
-            <section class="flex__column half gap-1">
+        <div class="flex__row mt gap-4 main__mobile">
+            <section class="flex__column gap-1 half ">
                 <div class="flex__row gap-2">
                     <img class="img__formatting" src="../../assets/img/user1.svg" alt="">
                     <div class="flex__column gap-3">
@@ -37,16 +37,16 @@
                         <p class="text-2">Front end Engineer</p>
                     </div>
                 </div>
-                <form class="flex__column teste gap-1">
+                <form class="flex__column gap-1">
                     <input class="input outline__none border__radius-1 border size__width-1" type="text" placeholder="Titulo do post">
                     <label hidden for="postComment"></label>
                     <textarea class="textarea outline__none border__radius-1 border size__width-1" name="postComment"></textarea>
                     <button class="button border__radius-1 border-2 button__primary button__post">Postar</button>
                 </form>
             </section>
-            <aside class="flex__column half gap-1 position__sticky">
+            <aside class="flex__column half gap-1 position__fixed-2 justify__between">
                 <h2 class="title-2 mb-2">Sugestões para você seguir</h2>
-                <ul>
+                <ul class="follower__mobile">
                     <li class="followers__users flex__row mb justify__between aside__li">
                         <div class="flex__row gap-2">
                             <img class="img__formatting" src="../../assets/img/user2.svg" alt="">
@@ -80,7 +80,7 @@
                 </ul>
             </aside>
         </div>
-      <section class="half">
+      <section class="half position__post__mobile">
           <h2 class="title-1 mb-3">Posts</h2>
           <ul id="posts" class="flex__column gap-5">
               <!-- <li class="flex__column gap-1">

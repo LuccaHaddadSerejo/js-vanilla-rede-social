@@ -32,8 +32,8 @@ function createPost(listaUm, listaDois){
         listDivOne_div_pTwo.innerText = listaUm[i].stack
         listDivTwo_h2.innerText = listaDois[i].title
         listDivTwo_p.innerText = listaDois[i].text
-        listDivThree_btn.innerText = "Abrir posts"
-        listDivThree_btnTwo.innerHTML = `<button><img class="teste" src="../../assets/img/Vector.svg"></button>`
+        listDivThree_btn.innerText = "Abrir post"
+        listDivThree_btnTwo.innerHTML = `<button class="button__like"><img class="teste" src="../../assets/img/Vector.svg"></button>`
 
         listDivThree_btn.addEventListener("click", function(){
 

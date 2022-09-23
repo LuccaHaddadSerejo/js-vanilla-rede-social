@@ -80,7 +80,7 @@
     border-color: var(--gray-5);
 }
 
-/* .button__like{
+.button__like{
     background-color: transparent;
     border: none;
     fill: var(--tertiary-color);
@@ -100,7 +100,7 @@
 
 .button__like:active{
     fill: var(--tertiary-color);
-} */
+}
 
 
 
