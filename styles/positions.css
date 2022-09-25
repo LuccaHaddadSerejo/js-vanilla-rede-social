@@ -5,9 +5,10 @@
     z-index: 1;
 }
 
-.position__fixed-2{
-    position: fixed;
-    right: -50px;
+.position__sticky{
+    position: sticky;
+    top: 150px;
+    height: 10px;
 }
 
 

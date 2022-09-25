@@ -14,6 +14,9 @@ function createPost(listaUm, listaDois){
         let listDivThree = document.createElement('div')
         let listDivThree_btn = document.createElement('button')
         let listDivThree_btnTwo = document.createElement('button')
+        let listDivThree_btnTwo_imgOne = document.createElement('img')
+        let listDivThree_btnTwo_imgTwo = document.createElement('img')
+   
 
         listPost.classList = "flex__column gap-1"
         listDivOne.classList = "flex__row gap-2"
@@ -33,13 +36,17 @@ function createPost(listaUm, listaDois){
         listDivTwo_h2.innerText = listaDois[i].title
         listDivTwo_p.innerText = listaDois[i].text
         listDivThree_btn.innerText = "Abrir post"
-        listDivThree_btnTwo.innerHTML = `<button class="button__like"><img class="teste" src="../../assets/img/Vector.svg"></button>`
+        listDivThree_btnTwo_imgOne.src = "../../assets/img/Vectorred.svg" 
+        listDivThree_btnTwo_imgTwo.src = "../../assets/img/Vector.svg"
+        listDivThree_btnTwo.innerText = ''
+       
 
         listDivThree_btn.addEventListener("click", function(){
 
         const modalWrapper = document.createElement("div")
         const modalMain = document.createElement("div")
         const modalDivOne = document.createElement("div")
+        const modalDivOneDiv = document.createElement("div")
         const modalCloseBtn = document.createElement("button")
         const modalImg = document.createElement("img")
         const modalInformation = document.createElement("div")
@@ -52,6 +59,7 @@ function createPost(listaUm, listaDois){
         modalWrapper.classList = "modal__wrapper"
         modalMain.classList = "modal"
         modalDivOne.classList = "modal__div-1"
+        modalDivOneDiv.classList = "modal__div-1__div"
         modalImg.classList = "modal__div1-img"
         modalInformation.classList = "modal__div1-information"
         modalName.classList = "title-2"
@@ -70,9 +78,11 @@ function createPost(listaUm, listaDois){
         modalPostName.innerText = listaDois[i].title
         modalPostFull.innerText = listaDois[i].text
         modalCloseBtn.innerText = "X"
-
+        
+        
         modalInformation.append(modalName, modalJob)
-        modalDivOne.append(modalImg, modalInformation, modalCloseBtn)
+        modalDivOneDiv.append(modalImg, modalInformation)
+        modalDivOne.append(modalDivOneDiv ,modalCloseBtn)
         modalDivTwo.append(modalPostName, modalPostFull)
         modalMain.append(modalDivOne, modalDivTwo)
         modalWrapper.append(modalMain)
@@ -91,6 +101,7 @@ function createPost(listaUm, listaDois){
         listDivOne_div.append(listDivOne_div_pOne, listDivOne_div_pTwo)
         listDivOne.append(listDivOne_img, listDivOne_div)
         listDivTwo.append(listDivTwo_h2, listDivTwo_p)
+        listDivThree_btnTwo.append(listDivThree_btnTwo_imgOne)
         listDivThree.append(listDivThree_btn,listDivThree_btnTwo)
         listPost.append(listDivOne, listDivTwo, listDivThree)
         ulPosts.appendChild(listPost)   

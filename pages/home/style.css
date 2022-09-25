@@ -32,27 +32,58 @@
     .main__mobile{
         display: flex;
         flex-direction: column;
+        position: relative;
     }
 
-    .position__fixed-2{
-        position: relative;
-        right: 9px;
-        bottom: 153px;
-        overflow-y: auto;
+    .position__sticky{
+        position: absolute;
+        top: 470px;
     }
 
     .position__post__mobile{
         position: relative;
-        bottom: 100px;
+        bottom: -250px;
     }
 
     .follower__mobile{
         display: flex;
-        flex-direction: row;  
+        flex-direction: row; 
+        overflow-x: scroll;
+        min-height: 125px;
+        gap: 40px;
     }
 
     .half{
         width: 100%;
+    }
+
+    .modal{
+        position: relative;
+        width: 90%;
+        max-height: 70%;
+        height: fit-content;
+        overflow-y: auto;
+    }
+
+    .modal__closeButton{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .modal__div-1{
+        justify-content: space-between; 
+    }
+
+    .flex_column_mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .followers__users{
+        height: fit-content;
+        max-height: 25px;
     }
 }
 

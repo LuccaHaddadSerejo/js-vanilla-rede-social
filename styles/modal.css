@@ -13,7 +13,7 @@
 }
 
 .modal{
-    position: fixed;
+    position: relative;
     background-color: white;
     width: 761px;
     border: 1px white solid;
@@ -24,8 +24,8 @@
 
 .modal__closeButton{
     position: absolute;
-    left: 700px;
-    top: 20px;
+    left: 660px;
+    top: 40px;
     padding: 5px;
     height: 30px;
     width: 30px;
@@ -45,6 +45,11 @@
     margin-bottom: 32px;
 }
 
+.modal__div-1__div{
+    display: flex;
+    gap: 15px;
+}
+
 .modal__div1-img{
     width: 52px;
     height: 52px;
@@ -55,6 +60,7 @@
     flex-direction: column;
     gap: 10px;
 }
+
 
 .modal__div-2{
     display: flex;
