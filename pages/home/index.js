@@ -1,20 +1,20 @@
-const ulPosts = document.querySelector("#posts")
+function createPost(arrUsers, arrPosts){
+    const ulPosts = document.querySelector("#posts")
 
-function createPost(listaUm, listaDois){
-    for(let i = 0; i < listaUm.length; i++){
-        let listPost = document.createElement('li')
-        let listDivOne = document.createElement('div')
-        let listDivOne_img = document.createElement('img')
-        let listDivOne_div = document.createElement('div')
-        let listDivOne_div_pOne = document.createElement('p')
-        let listDivOne_div_pTwo = document.createElement('p')
-        let listDivTwo = document.createElement('div')
-        let listDivTwo_h2 = document.createElement('h2')
-        let listDivTwo_p = document.createElement('p')
-        let listDivThree = document.createElement('div')
-        let listDivThree_btn = document.createElement('button')
-        let listDivThree_btnTwo = document.createElement('button')
-        let listDivThree_btnTwo_img = document.createElement('img')
+    for(let i = 0; i < arrUsers.length; i++){
+        const listPost = document.createElement('li')
+        const listDivOne = document.createElement('div')
+        const listDivOne_img = document.createElement('img')
+        const listDivOne_div = document.createElement('div')
+        const listDivOne_div_pOne = document.createElement('p')
+        const listDivOne_div_pTwo = document.createElement('p')
+        const listDivTwo = document.createElement('div')
+        const listDivTwo_h2 = document.createElement('h2')
+        const listDivTwo_p = document.createElement('p')
+        const listDivThree = document.createElement('div')
+        const listDivThree_btn = document.createElement('button')
+        const listDivThree_btnTwo = document.createElement('button')
+        const listDivThree_btnTwo_img = document.createElement('img')
    
 
         listPost.classList = "flex__column gap-1"
@@ -29,22 +29,22 @@ function createPost(listaUm, listaDois){
         listDivThree.classList = "flex__row align__center gap-3"
         listDivThree_btn.classList = "button border__radius-1 border-2 button__grey"
 
-        listDivOne_img.src = listaUm[i].img
-        listDivOne_div_pOne.innerText = listaUm[i].user
-        listDivOne_div_pTwo.innerText = listaUm[i].stack
-        listDivTwo_h2.innerText = listaDois[i].title
-        listDivTwo_p.innerText = listaDois[i].text
+        listDivOne_img.src = arrUsers[i].img
+        listDivOne_div_pOne.innerText = arrUsers[i].user
+        listDivOne_div_pTwo.innerText = arrUsers[i].stack
+        listDivTwo_h2.innerText = arrPosts[i].title
+        listDivTwo_p.innerText = arrPosts[i].text
         listDivThree_btn.innerText = "Abrir post"
         listDivThree_btnTwo_img.src = "../../assets/img/Vector.svg"
 
-        let teste = true  
+        let toggleImg = true 
         listDivThree_btnTwo.addEventListener("click", function(){ 
-        
-        teste = !teste
-        if(teste){
-            listDivThree_btnTwo_img.src = "../../assets/img/Vectorred.svg" 
+        if(toggleImg){
+            listDivThree_btnTwo_img.src = "../../assets/img/Vectorred.svg"
+            toggleImg = false 
         }else{
             listDivThree_btnTwo_img.src = "../../assets/img/Vector.svg"
+            toggleImg = true
         }
         })
         
@@ -81,11 +81,11 @@ function createPost(listaUm, listaDois){
         modalWrapper.id = "modalWrap"
         modalCloseBtn.id = "modalClose"
 
-        modalImg.src = listaUm[i].img
-        modalName.innerText = listaUm[i].user
-        modalJob.innerText = listaUm[i].stack
-        modalPostName.innerText = listaDois[i].title
-        modalPostFull.innerText = listaDois[i].text
+        modalImg.src = arrUsers[i].img
+        modalName.innerText = arrUsers[i].user
+        modalJob.innerText = arrUsers[i].stack
+        modalPostName.innerText = arrPosts[i].title
+        modalPostFull.innerText = arrPosts[i].text
         modalCloseBtn.innerText = "X"
         
         
@@ -96,9 +96,9 @@ function createPost(listaUm, listaDois){
         modalMain.append(modalDivOne, modalDivTwo)
         modalWrapper.append(modalMain)
     
-        const mainSection = document.getElementById("parentModal")
-        mainSection.appendChild(modalWrapper)
         
+        const mainSection = document.getElementById("modalParent")
+        mainSection.appendChild(modalWrapper)
         const btnClose = document.getElementById("modalClose")
         const wrapper = document.getElementById("modalWrap")
     
