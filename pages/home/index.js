@@ -14,8 +14,7 @@ function createPost(listaUm, listaDois){
         let listDivThree = document.createElement('div')
         let listDivThree_btn = document.createElement('button')
         let listDivThree_btnTwo = document.createElement('button')
-        let listDivThree_btnTwo_imgOne = document.createElement('img')
-        let listDivThree_btnTwo_imgTwo = document.createElement('img')
+        let listDivThree_btnTwo_img = document.createElement('img')
    
 
         listPost.classList = "flex__column gap-1"
@@ -36,10 +35,20 @@ function createPost(listaUm, listaDois){
         listDivTwo_h2.innerText = listaDois[i].title
         listDivTwo_p.innerText = listaDois[i].text
         listDivThree_btn.innerText = "Abrir post"
-        listDivThree_btnTwo_imgOne.src = "../../assets/img/Vectorred.svg" 
-        listDivThree_btnTwo_imgTwo.src = "../../assets/img/Vector.svg"
-        listDivThree_btnTwo.innerText = ''
-       
+        listDivThree_btnTwo_img.src = "../../assets/img/Vector.svg"
+
+        let teste = true  
+        listDivThree_btnTwo.addEventListener("click", function(){ 
+        
+        teste = !teste
+        if(teste){
+            listDivThree_btnTwo_img.src = "../../assets/img/Vectorred.svg" 
+        }else{
+            listDivThree_btnTwo_img.src = "../../assets/img/Vector.svg"
+        }
+        })
+        
+
 
         listDivThree_btn.addEventListener("click", function(){
 
@@ -101,7 +110,7 @@ function createPost(listaUm, listaDois){
         listDivOne_div.append(listDivOne_div_pOne, listDivOne_div_pTwo)
         listDivOne.append(listDivOne_img, listDivOne_div)
         listDivTwo.append(listDivTwo_h2, listDivTwo_p)
-        listDivThree_btnTwo.append(listDivThree_btnTwo_imgOne)
+        listDivThree_btnTwo.append(listDivThree_btnTwo_img)
         listDivThree.append(listDivThree_btn,listDivThree_btnTwo)
         listPost.append(listDivOne, listDivTwo, listDivThree)
         ulPosts.appendChild(listPost)   

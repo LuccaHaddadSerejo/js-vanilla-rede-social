@@ -57,21 +57,12 @@
     color: var(--primary-color);
 }
 
-.button__outline:focus{
-    border-color: var(--primary-color);
-    background-color: var(--primary-color);
-    color: var(--whiteFixed);
-}
-
-.button__outline:active{
-    border-color: var(--primary-color);
-    background-color: var(--primary-color);
-    color: var(--whiteFixed);
-}
-
 .button__outline-active{
     width: 89px;
     height: 28px;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--whiteFixed);
 }
 
 .button__disabled{
