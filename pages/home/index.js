@@ -1,7 +1,11 @@
+function appendLikeCounter(){
+
+}
+
 function createPost(arrUsers, arrPosts){
     const ulPosts = document.querySelector("#posts")
 
-    for(let i = 0; i < arrUsers.length; i++){
+    for(let i = 1; i < arrUsers.length; i++){
         const listPost = document.createElement('li')
         const listDivOne = document.createElement('div')
         const listDivOne_img = document.createElement('img')
@@ -13,8 +17,10 @@ function createPost(arrUsers, arrPosts){
         const listDivTwo_p = document.createElement('p')
         const listDivThree = document.createElement('div')
         const listDivThree_btn = document.createElement('button')
-        const listDivThree_btnTwo = document.createElement('button')
-        const listDivThree_btnTwo_img = document.createElement('img')
+        const listDivThree_div = document.createElement('div')
+        const listDivThree_div_btn = document.createElement('button')
+        const listDivThree_div_btn_img = document.createElement('img')
+        const listDivThree_div_counter = document.createElement('span')
    
 
         listPost.classList = "flex__column gap-1"
@@ -26,8 +32,10 @@ function createPost(arrUsers, arrPosts){
         listDivTwo.classList = "post__fullComment"
         listDivTwo_h2.classList = "title-1 mb-2"
         listDivTwo_p.classList = "text-1"
-        listDivThree.classList = "flex__row align__center gap-3"
+        listDivThree.classList = "flex__row align__center gap-6"
+        listDivThree_div.classList = "flex__row align__center like__div"
         listDivThree_btn.classList = "button border__radius-1 border-2 button__grey"
+        listDivThree_div_btn.classList = "button__like"
 
         listDivOne_img.src = arrUsers[i].img
         listDivOne_div_pOne.innerText = arrUsers[i].user
@@ -35,19 +43,21 @@ function createPost(arrUsers, arrPosts){
         listDivTwo_h2.innerText = arrPosts[i].title
         listDivTwo_p.innerText = arrPosts[i].text
         listDivThree_btn.innerText = "Abrir post"
-        listDivThree_btnTwo_img.src = "../../assets/img/Vector.svg"
+        listDivThree_div_btn_img.src = "../../assets/img/Vector.svg"
+        listDivThree_div_counter.innerText = 0
 
         let toggleImg = true 
-        listDivThree_btnTwo.addEventListener("click", function(){ 
-        if(toggleImg){
-            listDivThree_btnTwo_img.src = "../../assets/img/Vectorred.svg"
-            toggleImg = false 
-        }else{
-            listDivThree_btnTwo_img.src = "../../assets/img/Vector.svg"
-            toggleImg = true
-        }
+        listDivThree_div_btn.addEventListener("click", function(){ 
+            if(toggleImg){
+                listDivThree_div_btn_img.src = "../../assets/img/Vectorred.svg"
+                    listDivThree_div_counter.innerText ++
+                    toggleImg = false 
+            }else{
+                listDivThree_div_btn_img.src = "../../assets/img/Vector.svg"
+                toggleImg = true
+                listDivThree_div_counter.innerText --
+            }
         })
-        
 
 
         listDivThree_btn.addEventListener("click", function(){
@@ -76,7 +86,7 @@ function createPost(arrUsers, arrPosts){
         modalDivTwo.classList = "modal__div-2"
         modalPostName.classList = "title-1 mb-2"
         modalPostFull.classList = "text-1"
-        modalCloseBtn.classList = "modal__closeButton"
+        modalCloseBtn.classList = "modal__closeButton button__font"
 
         modalWrapper.id = "modalWrap"
         modalCloseBtn.id = "modalClose"
@@ -110,8 +120,9 @@ function createPost(arrUsers, arrPosts){
         listDivOne_div.append(listDivOne_div_pOne, listDivOne_div_pTwo)
         listDivOne.append(listDivOne_img, listDivOne_div)
         listDivTwo.append(listDivTwo_h2, listDivTwo_p)
-        listDivThree_btnTwo.append(listDivThree_btnTwo_img)
-        listDivThree.append(listDivThree_btn,listDivThree_btnTwo)
+        listDivThree_div_btn.append(listDivThree_div_btn_img)
+        listDivThree_div.append(listDivThree_div_btn, listDivThree_div_counter)
+        listDivThree.append(listDivThree_btn, listDivThree_div)
         listPost.append(listDivOne, listDivTwo, listDivThree)
         ulPosts.appendChild(listPost)   
     }

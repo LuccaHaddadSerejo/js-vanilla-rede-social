@@ -74,23 +74,11 @@
 .button__like{
     background-color: transparent;
     border: none;
-    fill: var(--tertiary-color);
-    border-radius: 20%;
-    height: 34px;
-    width: 35px;
     cursor: pointer;
 }
 
-.button__like:hover{
-    fill: var(--tertiary-color);
-}
-
 .button__like:focus{
-    fill: var(--tertiary-color);
-}
-
-.button__like:active{
-    fill: var(--tertiary-color);
+    outline: none;
 }
 
 

@@ -2,6 +2,10 @@
 @import "../../styles/display.css";
 
 
+.teste{
+    background-color: red;
+}
+
 .button__post{
     height: 38px;
     width: 69px;
@@ -13,9 +17,6 @@
     height: 52px;
 }
 
-.aside__li{
-    width: 65%;
-}
 
 .post__fullComment{
     max-width: 100%;
@@ -26,6 +27,16 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.like__div{
+    height: 30px;
+    width: 46.76px;
+    gap: 7px;
+}
+
+.aside{
+    width: 470px;
 }
 
 @media (max-width:800px){

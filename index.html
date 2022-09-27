@@ -23,13 +23,13 @@
 <body>
     <header class="navbar position__fixed">
       <nav class="container navbar-items">
-          <h1 class="white">TechPosters</h1>
+          <h1 class="white navbar__title">TechPosters</h1>
           <button class="navbar-link">Sair</button>
       </nav>
     </header>
   <main id="modalParent" class="mt__header container">
-        <div class="flex__row mt gap-4 main__mobile">
-            <section class="flex__column gap-1 half ">
+        <div class="flex__row justify__between main__mobile">
+            <section class="flex__column gap-1">
                 <div class="flex__row gap-2">
                     <img class="img__formatting" src="../../assets/img/user1.svg" alt="">
                     <div class="flex__column gap-3">
@@ -37,42 +37,42 @@
                         <p class="text-2">Front end Engineer</p>
                     </div>
                 </div>
-                <form class="flex__column gap-1">
-                    <input class="input outline__none border__radius-1 border size__width-1" type="text" placeholder="Titulo do post">
+                <form class="flex__column gap-1 mb-4">
+                    <input class="input outline__none border__radius-1 border size__width text-1" type="text" placeholder="Digitar título do post">
                     <label hidden for="postComment"></label>
-                    <textarea class="textarea outline__none border__radius-1 border size__width-1" name="postComment"></textarea>
+                    <textarea class="textarea outline__none border__radius-1 border size__width text-1" name="postComment" placeholder="Digitar descrição do post"></textarea>
                     <button class="button border__radius-1 border-2 button__primary button__post">Postar</button>
                 </form>
             </section>
-            <aside class="flex__column half gap-1 position__sticky">
+            <aside class="flex__column gap-1 position__sticky aside">
                 <h2 class="title-2 mb-2">Sugestões para você seguir</h2>
                 <ul class="follower__mobile">
-                    <li class="followers__users flex__row mb justify__between aside__li flex_column_mobile">
-                        <div class="flex__row gap-2 ">
-                            <img class="img__formatting" src="../../assets/img/user2.svg" alt="">
-                            <div class="flex__column gap-3">
-                                <p class="title-2">Samuel Persuhn</p>
-                                <p class="text-2">Front end Engineer</p>
-                            </div>
-                        </div>
-                        <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
-                    </li>
-                    <li class=" followers__users flex__row mb justify__between aside__li flex_column_mobile">
-                        <div class="flex__row gap-3 ">
+                    <li class="followers__users flex__row mb justify__between full flex_column_mobile full">
+                        <div class="flex__row gap-2">
                             <img class="img__formatting" src="../../assets/img/user3.svg" alt="">
                             <div class="flex__column gap-3">
-                                <p class="title-2">Carlos Lima</p>
+                                <p class="title-2 text-size-1">Carlos Lima</p>
                                 <p class="text-2">UX e UI Designer</p>
                             </div>
                         </div>
                         <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
                     </li>
-                    <li class="followers__users flex__row mb justify__between aside__li flex_column_mobile">
+                    <li class=" followers__users flex__row mb justify__between full flex_column_mobile">
                         <div class="flex__row gap-2">
-                            <img class="img__formatting" src="../../assets/img/user4.svg" alt="">
+                            <img class="img__formatting" src="../../assets/img/user6.svg" alt="">
                             <div class="flex__column gap-3">
-                                <p class="title-2">Carla Maria</p>
-                                <p class="text-2">Back end Engineer</p>
+                                <p class="title-2">Larissa Camargo</p>
+                                <p class="text-2">UI Developer</p>
+                            </div>
+                        </div>
+                        <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>
+                    </li>
+                    <li class="followers__users flex__row mb justify__between full flex_column_mobile">
+                        <div class="flex__row gap-2">
+                            <img class="img__formatting" src="../../assets/img/user7.svg" alt="">
+                            <div class="flex__column gap-3">
+                                <p class="title-2">Filipe Gutierry</p>
+                                <p class="text-2">Full Stack Developer</p>
                             </div>
                         </div>
                         <button class="button_follower button border__radius-1 border-2 button__outline">Seguir</button>

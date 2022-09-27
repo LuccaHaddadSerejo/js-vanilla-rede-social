@@ -29,3 +29,8 @@
 .navbar-link:hover, .navbar-link.actived{
     background-color: var(--gray-3);
 }
+
+.navbar__title{
+    width: 7.487rem;
+    height: 0.923rem;
+}

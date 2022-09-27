@@ -3,26 +3,30 @@
     background-color: var(--whiteFixed);
     border-color: var(--gray-5);
     height: 52px;
+    font-family: var(--font-family-1);
 }
 
-/* .input::placeholder{
+.input::placeholder{
     color: var(--gray-4);
-} */
+    line-height: 1.21rem;
+}
 
 .input:focus{
     border-color: var(--primary-color);
 }
 
 .textarea{
-    height: 205px;
+    height: 130px;
     padding: 28px 21px;
     border-color: var(--gray-5);
+    font-family: var(--font-family-1);
+    
 }
 
 .textarea:focus{
     border-color: var(--primary-color);
 }
 
-.placeholder{
+.textarea::placeholder{
     color: var(--gray-4);
 }
