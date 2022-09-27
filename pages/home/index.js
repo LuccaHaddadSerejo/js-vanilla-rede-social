@@ -1,11 +1,7 @@
-function appendLikeCounter(){
-
-}
-
 function createPost(arrUsers, arrPosts){
     const ulPosts = document.querySelector("#posts")
 
-    for(let i = 1; i < arrUsers.length; i++){
+    for(let i = 0; i < arrUsers.length; i++){
         const listPost = document.createElement('li')
         const listDivOne = document.createElement('div')
         const listDivOne_img = document.createElement('img')
@@ -130,7 +126,7 @@ function createPost(arrUsers, arrPosts){
 
 createPost(users, posts)
 
-function followHover(){
+function btnfollowHover(){
         const btnFollower = document.getElementsByClassName("button_follower")
         for(let i = 0; i < btnFollower.length; i++){      
             btnFollower[i].addEventListener("click", function(){
@@ -145,7 +141,54 @@ function followHover(){
         }
 }
 
-followHover()
+btnfollowHover()
+
+function btnPost(){
+    const btnPost = document.querySelector("#btnPost")
+    btnPost.addEventListener("click", function(event){
+        event.preventDefault()
+        const ulPosts = document.querySelector("#posts") 
+        ulPosts.innerText = ""
+        newPostPush()
+        createPost(users, posts)
+    })
+}
+
+btnPost()
+
+function newPostPush(){
+    let inputTitle = document.querySelector("#postTitle")
+    let textAreaPost = document.querySelector("#postFull")
+    let userImg = document.createElement("img")
+
+    let user = newUser(10, "Lucca Haddad", "Kenzie Student", "../../assets/img/LuccaHaddad.jpg")
+    let post = newPost(4, 10, inputTitle.value, textAreaPost.value)
+    users.unshift(user)
+    posts.unshift(post)
+}
+
+
+function newUser(id, user, stack, img){
+    let newUser = {
+        id,
+        user,
+        stack,
+        img,
+    }
+    return newUser
+}
+
+function newPost(id_post, user, title, text){
+    let post = {
+        id_post,
+        user,
+        title,
+        text
+    }
+    return post
+}
+
+
 
 
 

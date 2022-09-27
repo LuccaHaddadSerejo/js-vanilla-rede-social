@@ -29,19 +29,19 @@
     </header>
   <main id="modalParent" class="mt__header container">
         <div class="flex__row justify__between main__mobile">
-            <section class="flex__column gap-1">
+            <section class="flex__column gap-1 size__width">
                 <div class="flex__row gap-2">
-                    <img class="img__formatting" src="../../assets/img/user1.svg" alt="">
+                    <img class="img__formatting-2" src="../../assets/img/LuccaHaddad.jpg" alt="">
                     <div class="flex__column gap-3">
-                        <p class="title-2">Samuel Leão</p>
-                        <p class="text-2">Front end Engineer</p>
+                        <p class="title-2">Lucca Haddad</p>
+                        <p class="text-2">Kenzie Student</p>
                     </div>
                 </div>
                 <form class="flex__column gap-1 mb-4">
-                    <input class="input outline__none border__radius-1 border size__width text-1" type="text" placeholder="Digitar título do post">
+                    <input id="postTitle" class="input outline__none border__radius-1 border full text-1" type="text" placeholder="Digitar título do post">
                     <label hidden for="postComment"></label>
-                    <textarea class="textarea outline__none border__radius-1 border size__width text-1" name="postComment" placeholder="Digitar descrição do post"></textarea>
-                    <button class="button border__radius-1 border-2 button__primary button__post">Postar</button>
+                    <textarea id="postFull" class="textarea outline__none border__radius-1 border full text-1" name="postComment" placeholder="Digitar descrição do post"></textarea>
+                    <button id="btnPost" class="button border__radius-1 border-2 button__primary button__post">Postar</button>
                 </form>
             </section>
             <aside class="flex__column gap-1 position__sticky aside">
@@ -80,7 +80,7 @@
                 </ul>
             </aside>
         </div>
-      <section class="half position__post__mobile">
+      <section class="size__width position__post__mobile">
           <h2 class="title-1 mb-3">Posts</h2>
           <ul id="posts" class="flex__column gap-5">
           </ul>

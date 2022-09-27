@@ -1,11 +1,6 @@
 @import "../../styles/sizes.css";
 @import "../../styles/display.css";
 
-
-.teste{
-    background-color: red;
-}
-
 .button__post{
     height: 38px;
     width: 69px;
@@ -15,6 +10,13 @@
 .img__formatting{
     width: 52px;
     height: 52px;
+}
+
+.img__formatting-2{
+    width: 52px;
+    height: 52px;
+    border: solid 1px white;
+    border-radius: 100%;
 }
 
 
@@ -36,7 +38,7 @@
 }
 
 .aside{
-    width: 470px;
+    width: 25%;
 }
 
 @media (max-width:800px){
@@ -48,12 +50,12 @@
 
     .position__sticky{
         position: absolute;
-        top: 470px;
+        top: 440px;
     }
 
     .position__post__mobile{
         position: relative;
-        bottom: -250px;
+        bottom: -300px;
     }
 
     .follower__mobile{
@@ -64,7 +66,11 @@
         gap: 40px;
     }
 
-    .half{
+    .size__width{
+        width: 100%;
+    }
+
+    .aside{
         width: 100%;
     }
 
