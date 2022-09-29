@@ -145,6 +145,7 @@ btnfollowHover()
 
 function btnPost(){
     const btnPost = document.querySelector("#btnPost")
+   
     btnPost.addEventListener("click", function(event){
         event.preventDefault()
         const ulPosts = document.querySelector("#posts") 
@@ -156,10 +157,25 @@ function btnPost(){
 
 btnPost()
 
+
+function EnableDisable() {
+    let inputTitle = document.querySelector("#postTitle")
+    let textAreaPost = document.querySelector("#postFull")
+    //Reference the Button.
+    var btnPost = document.getElementById("btnSubmit");
+
+    if (inputTitle.value.trim() != "") {
+        btnPost.disabled = false;
+    } else {
+        //Disable the TextBox when TextBox is empty.
+        btnSubmit.disabled = true;
+    }
+};
+
+
 function newPostPush(){
     let inputTitle = document.querySelector("#postTitle")
     let textAreaPost = document.querySelector("#postFull")
-    let userImg = document.createElement("img")
 
     let user = newUser(10, "Lucca Haddad", "Kenzie Student", "../../assets/img/LuccaHaddad.jpg")
     let post = newPost(4, 10, inputTitle.value, textAreaPost.value)
