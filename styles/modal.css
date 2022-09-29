@@ -20,6 +20,7 @@
     padding: 40px 50px;
     height: fit-content;
     margin-top: 6%;
+    animation: animateModal 1s;
 }
 
 .modal__closeButton{
@@ -75,3 +76,15 @@
 .button__font{
     font-family: var(--font-family-2);
 }
+
+@keyframes animateModal {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

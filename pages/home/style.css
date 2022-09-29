@@ -47,6 +47,8 @@
     width: 25%;
 }
 
+
+
 @media (max-width:800px){
     .main__mobile{
         display: flex;
